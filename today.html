@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hero{
+            background-color: green;
+            color:white
+        }
+        #villain{
+            background-color: red;
+            color:white
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="story">Is Java Script easy ?</h1>
+    <button id="hero">Yes</button>
+    <button id="villain">No</button>
+    <button class="check">check</button>
+    <script>
+        document.getElementById('hero').onclick = function(){
+            document.getElementById('story').innerHTML = "Yes, Javascript is easy" 
+        }
+        document.getElementById('villain').onclick = function(){
+            document.getElementById('story').innerHTML = "No, If you do not practice" 
+        }
+        document.getElementsByClassName('check')[0].onclick = function(){
+            document.getElementById('story').innerHTML = "Nothing is hard, all are new only" 
+        }
+    </script>
+</body>
+</html>
